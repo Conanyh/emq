@@ -19,3 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('store/queue', 'TestController@store');
 Route::get('amqp/send', 'AmqpSendController@sendTask');
+
+
+Route::get('sending', 'RabbitMQController@sending');
+Route::get('receiving', 'RabbitMQController@receiving');
