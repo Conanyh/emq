@@ -8,23 +8,11 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 class RabbitMQController extends Controller
 {
-    private function connection()
+    public function sending()
     {
         // create a connection
         $connection = new AMQPStreamConnection('localhost', 5672,'admin', '123456');
         $channel = $connection->channel();
-    }
-
-    private function close()
-    {
-        $channel->close();
-        $connection->close();
-    }
-
-
-    public function sending()
-    {
-        $this->connection();
 
         // send, publish a message to queue
         $channel->queue_declare('hello', false, false, false, false);
@@ -34,12 +22,14 @@ class RabbitMQController extends Controller
 
         echo "[x] Send 'Hello World' \n";
 
-        $this->close();
+        $channel->close();
+        $connection->close();
     }
 
     public function receiving()
     {
-        $this->connection();
+        $connection = new AMQPStreamConnection('localhost', 5672,'admin', '123456');
+        $channel = $connection->channel();
 
         $channel->queue_declare('hello', false, false, false, false);
 
@@ -55,7 +45,8 @@ class RabbitMQController extends Controller
             $channel->wait();
         }
 
-        $this->close();
+        $channel->close();
+        $connection->close();
     }
 
 
