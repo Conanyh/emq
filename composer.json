@@ -11,7 +11,9 @@
         "laravel/tinker": "^1.0",
         "php-amqplib/php-amqplib": "^2.11",
         "predis/predis": "~1.1",
-        "vladimir-yuldashev/laravel-queue-rabbitmq": "7.0"
+        "tymon/jwt-auth": "1.*@rc",
+        "vladimir-yuldashev/laravel-queue-rabbitmq": "7.0",
+        "workerman/gateway-worker": "^3.0"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
