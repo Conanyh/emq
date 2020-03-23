@@ -2177,11 +2177,6 @@
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
-                "url": "https://mirrors.huaweicloud.com/repository/php/dist/symfony/css-selector/symfony-css-selector-v5.0.5-a0b51ba9.zip",
-                "reference": "a0b51ba9938ccc206d9284de7eb527c2d4550b44",
-                "shasum": "f55317aed3c26b67d84b4ba507cc845161c11a30"
-=======
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/d0a6dd288fa8848dcc3d1f58b94de6a7cc5d2d22",
                 "reference": "d0a6dd288fa8848dcc3d1f58b94de6a7cc5d2d22",
                 "shasum": "",
@@ -2191,7 +2186,6 @@
                         "preferred": true
                     }
                 ]
->>>>>>> 389ca243b746e0c1ad0dacf84d71b78dc69ac181
             },
             "require": {
                 "php": "^7.2.5"
@@ -2717,11 +2711,6 @@
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
-                "url": "https://mirrors.huaweicloud.com/repository/php/dist/symfony/mime/symfony-mime-v5.0.5-9b3e5b5e.zip",
-                "reference": "9b3e5b5e58c56bbd76628c952d2b78556d305f3c",
-                "shasum": "9b8c70ec19ee3d68285cae98beeddf862880944a"
-=======
                 "url": "https://api.github.com/repos/symfony/mime/zipball/304db017bafd71c122cd5223a9ac2d03dc24da32",
                 "reference": "304db017bafd71c122cd5223a9ac2d03dc24da32",
                 "shasum": "",
@@ -2731,7 +2720,6 @@
                         "preferred": true
                     }
                 ]
->>>>>>> 389ca243b746e0c1ad0dacf84d71b78dc69ac181
             },
             "require": {
                 "php": "^7.2.5",
@@ -3434,11 +3422,6 @@
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
-                "url": "https://mirrors.huaweicloud.com/repository/php/dist/symfony/service-contracts/symfony-service-contracts-v2.0.1-144c5e51.zip",
-                "reference": "144c5e51266b281231e947b51223ba14acf1a749",
-                "shasum": "0b168da37980d82ed210775fde316cf9e251e29c"
-=======
                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
                 "reference": "ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
                 "shasum": "",
@@ -3448,7 +3431,6 @@
                         "preferred": true
                     }
                 ]
->>>>>>> 389ca243b746e0c1ad0dacf84d71b78dc69ac181
             },
             "require": {
                 "php": "^7.2.5",
@@ -3585,11 +3567,6 @@
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
-                "url": "https://mirrors.huaweicloud.com/repository/php/dist/symfony/translation-contracts/symfony-translation-contracts-v2.0.1-8cc682ac.zip",
-                "reference": "8cc682ac458d75557203b2f2f14b0b92e1c744ed",
-                "shasum": "c58c14d55bafd725b5fa8efbea4490853b9b1f05"
-=======
                 "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/364518c132c95642e530d9b2d217acbc2ccac3e6",
                 "reference": "364518c132c95642e530d9b2d217acbc2ccac3e6",
                 "shasum": "",
@@ -3599,7 +3576,6 @@
                         "preferred": true
                     }
                 ]
->>>>>>> 389ca243b746e0c1ad0dacf84d71b78dc69ac181
             },
             "require": {
                 "php": "^7.2.5"
