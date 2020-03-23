@@ -14,7 +14,7 @@ class Events
 
     public static function onConnect($client_id)
     {
-        Gateway::sendToClient('1', json_encode(['type' => 'init', 'client_id' => '1']));
+        Gateway::sendToClient($client_id, json_encode(['type' => 'init', 'client_id' => $client_id]));
     }
 
     public static function onWebSocketConnect($client_id, $data)
@@ -26,12 +26,12 @@ class Events
     {
         $response = ['errcode' => 0, 'msg' => 'ok', 'data' => []];
 
-        Gateway::sendToClient('1', json_encode($response));
+        Gateway::sendToClient($client_id, json_encode($response));
     }
 
     public static function onClose($client_id)
     {
-        Log::info('close connection' . 1);
+        Log::info('close connection' . $client_id);
     }
 
     private static function authentication($order_id, $user_id): bool
