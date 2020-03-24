@@ -82,6 +82,10 @@
                     Laravel
                 </div>
 
+                <div class="content">
+                    welcome to my application
+                </div>
+
                 <div class="app">
                     <example-component></example-component>
                 </div>
