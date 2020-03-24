@@ -10,6 +10,9 @@ use GatewayWorker\Register;
 
 class GatewayWorkerServer extends Command
 {
+
+    // php artisan gateway-worker:server start
+
     /**
      * The name and signature of the console command.
      *
