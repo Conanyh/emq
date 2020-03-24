@@ -15,4 +15,12 @@ class TestController extends Controller
         $job = (new TestQueue($data))->onQueue('testqueue');
         $this->dispatch($job);
     }
+
+    public function push()
+    {
+        $fd = 1;
+        $swoole = app('swoole');
+        $success = $swoole->push($fd, 'Push data to fd#1 in Controller');
+        var_dump($success);
+    }
 }
